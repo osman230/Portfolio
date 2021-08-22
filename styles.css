@@ -6,46 +6,65 @@
   
   body {
    
-    color: #d6d6d6;
+    color: #f09595;
     font-family: Helvetica, Arial, sans-serif;
   }
 
   header {
     padding: 20px 35px;
-    background-color: #d6d6d6;
+    background-color: #f09595;
   }
   
   header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #f09595;
+    color: #d6d6d6;
     margin: 0;
-    display: inline;
+    text-align: center;
+    
   }
+
+  .description {
+    text-align: center;
+    line-height: 1.7;
+    color: #d6d6d6;;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    border: 2px solid #f09595;
+
+  }
+    
   header a {
     text-decoration: none;
     color: #f09595;
   }
   
   header nav {
-    float: right;
     margin: 7px 0;
+    text-align: center;
+    list-style: none;
   }
   
   header nav ul li {
-    display: inline;
+    text-align: center;
+    list-style: none;
   }
   
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    text-align: center;
+    list-style: none;
+    color: #d6d6d6;
   }
   
   footer {
     background: #f09595;
     width: 100%;
     padding: 40px 35px;
+    text-align: center;
   }
   
   footer h2 {
@@ -59,15 +78,7 @@
     padding: 60px;
   }
   
-  /* Hero Style Start */
-  .hero {
-    background-image: url('hero-bg.jpg');
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  /* Hero Style End */
+
   
 
   
@@ -85,32 +96,17 @@
   
   .steps {
     text-align: center;
+    border-bottom: 3px solid;
     background: #f09595;
   }
-  
-  .steps div {
-    margin-bottom: 80px;
-  }
-  
-  .steps img {
-    width: 23%;
-    margin: 10px 0;
-  }
-  
-  .steps h3 {
-    color: #d6d6d6;
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  
+
+
   .steps p {
     color: #d6d6d6;
-    font-size: 23px;
+    font-size: 20px;
+    
   }
   
-  .steps span {
-    font-size: 38px;
-  }
   
   .section-title {
     font-size: 55px;
@@ -126,7 +122,7 @@
   }
   
   .secondary-border {
-    border-color: #f09595;
+    border-color: #d6d6d6;
   }
 
   .thumbnail:hover { 
@@ -151,8 +147,8 @@
         }
       
         header h1 {
-          width: 100%;
           text-align: center;
+
         }
       
         header nav ul {
@@ -170,25 +166,7 @@
           width: 100%;
         }
       
-        .hero-cta, .hero-form {
-          width: 100%;
-        }
-        
-        .hero-cta {
-          text-align: center;
-        }
-      
-        .section-title {
-          width: 80%;
-        }
-        
-        .trainer {
-          flex: 0 70%;
-        }
-        
-        .contact-info iframe{
-          flex: 1 100%;
-        }
+
       }
       
       /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -196,18 +174,13 @@
         section {
           padding: 30px 15px;
         }
-      
+      header h1 {
+        text-align: center;
+      }
         .step h3 {
           flex: 1 100%;
           text-align: center;
         }
-      
-        .step-info {
-          flex: 2 100%;
-          text-align: center;
-          justify-content: center;
-        }
-      
         .step-img {
           flex: 0 32%;
           margin-right: 0;
@@ -215,21 +188,17 @@
           margin-bottom: 15px;
         }
       
-        .step-text {
-          flex: 100%;  
-        }
-      
-        .trainer-bio h3, .trainer-bio h4 {
-          display: block;
-        }
+
       }
       
       /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
       @media screen and (max-width: 575px) {
-        .hero-form button {
-          width: 100%;
+
+        header h1 {
+  
+          text-align: center;
         }
-      
+
         .section-title {
           width: 95%;
         }
@@ -238,19 +207,5 @@
           width: 100%;
         }
       
-        .trainer {
-          flex: 0 100%;
-        }
-      
-        .contact-info {
-          text-align: center;
-        }
-      
-        .contact-info > * {
-          flex: 0 100%;
-        }
-      
-        .contact-form {
-          order: 3;
-        }
+
       }
