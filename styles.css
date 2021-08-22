@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    color: #d6d6d6;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  header {
+    padding: 20px 35px;
+    background-color: #d6d6d6;
+  }
+  
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #f09595;
+    margin: 0;
+    display: inline;
+  }
+  header a {
+    text-decoration: none;
+    color: #f09595;
+  }
+  
+  header nav {
+    float: right;
+    margin: 7px 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+  }
+  
+  footer {
+    background: #f09595;
+    width: 100%;
+    padding: 40px 35px;
+  }
+  
+  footer h2 {
+    display: inline;
+    color: #d6d6d6;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  section {
+    padding: 60px;
+  }
+  
+  /* Hero Style Start */
+  .hero {
+    background-image: url('hero-bg.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  /* Hero Style End */
+  
+  .hero-form {
+    border: 3px solid #d6d6d6;
+    background-color: #f09595;
+    padding: 20px;
+    width: 500px;
+    color: #d6d6d6;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+  }
+  
+  .hero-form h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .hero-form p {
+    margin: 5px 0 15px 0;
+  }
+  
+  .form-input {
+    border: 1px solid #d6d6d6;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #d6d6d6;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .hero-form label {
+    margin: 0 5px;
+  }
+  
+  .hero-form button {
+    color: #f09595;
+    background-color: #d6d6d6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .intro {
+    text-align: center;
+  }
+  
+  .intro p {
+    line-height: 1.7;
+    color: #d6d6d6;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  
+  .steps {
+    text-align: center;
+    background: #f09595;
+  }
+  
+  .steps div {
+    margin-bottom: 80px;
+  }
+  
+  .steps img {
+    width: 15%;
+    margin: 10px 0;
+  }
+  
+  .steps h3 {
+    color: #d6d6d6;
+    font-size: 46px;
+    margin-top: 10px;
+  }
+  
+  .steps p {
+    color: #d6d6d6;
+    font-size: 23px;
+  }
+  
+  .steps span {
+    font-size: 38px;
+  }
+  
+  .section-title {
+    font-size: 55px;
+    color: #d6d6d6;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  
+  .primary-border {
+    border-color: #f09595;
+  }
+  
+  .secondary-border {
+    border-color: #f09595;
+  }
+  
+ 
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+      /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+      @media screen and (max-width: 980px) {
+        header {
+          padding-bottom: 0;
+          justify-content: center;
+          position: relative;
+        }
+      
+        header h1 {
+          width: 100%;
+          text-align: center;
+        }
+      
+        header nav ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+        }
+      
+        header nav ul li a {
+          font-size: 20px;
+        }
+      
+        footer h2, footer div {
+          text-align: center;
+          width: 100%;
+        }
+      
+        .hero-cta, .hero-form {
+          width: 100%;
+        }
+        
+        .hero-cta {
+          text-align: center;
+        }
+      
+        .section-title {
+          width: 80%;
+        }
+        
+        .trainer {
+          flex: 0 70%;
+        }
+        
+        .contact-info iframe{
+          flex: 1 100%;
+        }
+      }
+      
+      /* MEDIA QUERY FOR TABLETS AND SMALLER */
+      @media screen and (max-width: 768px) {
+        section {
+          padding: 30px 15px;
+        }
+      
+        .step h3 {
+          flex: 1 100%;
+          text-align: center;
+        }
+      
+        .step-info {
+          flex: 2 100%;
+          text-align: center;
+          justify-content: center;
+        }
+      
+        .step-img {
+          flex: 0 32%;
+          margin-right: 0;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      
+        .step-text {
+          flex: 100%;  
+        }
+      
+        .trainer-bio h3, .trainer-bio h4 {
+          display: block;
+        }
+      }
+      
+      /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+      @media screen and (max-width: 575px) {
+        .hero-form button {
+          width: 100%;
+        }
+      
+        .section-title {
+          width: 95%;
+        }
+      
+        .intro p {
+          width: 100%;
+        }
+      
+        .trainer {
+          flex: 0 100%;
+        }
+      
+        .contact-info {
+          text-align: center;
+        }
+      
+        .contact-info > * {
+          flex: 0 100%;
+        }
+      
+        .contact-form {
+          order: 3;
+        }
+      }
