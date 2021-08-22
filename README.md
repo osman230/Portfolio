@@ -9,7 +9,8 @@ A website that showcases my work.
 
 ## Website
 https://osman230.github.io/Portfolio/
-![Portfolio first draft](https://user-images.githubusercontent.com/88051358/130371045-74725adc-e144-4072-9ebf-449a2f2bce76.PNG)
+![Portfolio first draft](https://user-images.githubusercontent.com/88051358/130371078-edf2ab1b-0fc8-40f5-80a0-a2c5134095a7.png)
+
 
 ## Contribution
 
